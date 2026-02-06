@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test("@Webst Client App login", async ({ page }) => {
+test("@Web Client App login", async ({ page }) => {
   const email = "htindev@gmail.com";
   const productName = "ZARA COAT 3";
   const products = page.locator(".card-body");
@@ -41,12 +41,12 @@ test("@Webst Client App login", async ({ page }) => {
   }
 
   await expect(page.locator(".user__name [type='text']").first()).toHaveText(
-    email
+    email,
   );
   // expect(await page.locator(".user__name label")).toHaveText(email);
   await page.locator(".btnn").click();
   await expect(page.locator(".hero-primary")).toHaveText(
-    "Thankyou for the order. "
+    "Thankyou for the order. ",
   );
   const orderId = await page
     .locator(".em-spacer-1 .ng-star-inserted")
@@ -68,5 +68,3 @@ test("@Webst Client App login", async ({ page }) => {
   expect(orderId.includes(orderIdDetails)).toBeTruthy();
   await page.pause();
 });
-
-

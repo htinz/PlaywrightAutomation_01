@@ -1,6 +1,6 @@
 // const { test, expect } = require("@playwright/test");
 
-// test("@Webst Client App login", async ({ page }) => {
+// test("@Web Client App login", async ({ page }) => {
 //   const email = "email@example.com";
 //   const productName = "ZARA COAT 3";
 //   const products = page.locator(".card-body");
@@ -77,7 +77,7 @@
 //=============================================================================
 const { test, expect } = require("@playwright/test");
 
-test("@Webst Client App login", async ({ page }) => {
+test("@Web Client App login", async ({ page }) => {
   //js file- Login js, DashboardPage
   const email = "htindev@gmail.com";
   const productName = "ZARA COAT 3";
