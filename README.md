@@ -1,4 +1,4 @@
-# PlayWriteAutomation
+# PlaywrightAutomation_01
 
 ## Overview
 This repository showcases a scalable end-to-end automation testing framework developed with Playwright using JavaScript and TypeScript. 
