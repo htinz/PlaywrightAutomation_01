@@ -10,7 +10,17 @@
   "directories": {
     "test": "tests"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --grep @Web",
+    "test:api": "npx playwright test --grep @API",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report"
+  },
+  "_deprecatedScripts": {
     "regression": "npx playwright test",
     "webTests": "npx playwright test --grep @Web",
     "APITests": "npx playwright test --grep @API",

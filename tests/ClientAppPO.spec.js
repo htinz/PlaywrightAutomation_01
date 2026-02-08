@@ -123,7 +123,7 @@ for (const data of dataset) {
     //Zara Coat 4
   });
 }
-customtest.only(`Client App login`, async ({ page, testDataForOrder }) => {
+customtest(`Client App login`, async ({ page, testDataForOrder }) => {
   const poManager = new POManager(page);
   const products = page.locator(".card-body");
   const loginPage = poManager.getLoginPage();
